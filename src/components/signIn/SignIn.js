@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./SignIn.css";
-import Header from "../header/Header";
 import { auth, googleProvider } from "../../firebase";
 import { useDispatch } from "react-redux";
 import { signIn } from "../../actions/index";

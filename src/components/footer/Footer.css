@@ -3,6 +3,7 @@
   padding: 2rem;
   font-size: 1.8rem;
   color: #757575;
+  border-top: 0.1px solid gray;
 }
 
 .footer__body {
@@ -24,6 +25,11 @@
 
 .footer__title {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  padding: 1rem 1rem 1rem 5rem;
 }
 /*# sourceMappingURL=Footer.css.map */

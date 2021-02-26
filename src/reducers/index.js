@@ -1,5 +1,6 @@
 import { createStore, combineReducers, compose } from "redux";
 import userReducer from "./authReducer";
+import moviesReducer from "./moviesReducer";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
@@ -10,6 +11,7 @@ const persistConfig = {
 };
 const reducer = combineReducers({
 	user: userReducer,
+	movies: moviesReducer,
 });
 const persistedReducer = persistReducer(persistConfig, reducer);
 

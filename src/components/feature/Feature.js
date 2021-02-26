@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./Feature.css";
 import axios from "../../axios";
 import requests from "../../Requests";
+import { markFav } from "../../actions/index";
+import { useDispatch } from "react-redux";
 
 function Feature() {
+	const dispatch = useDispatch();
 	const [movie, setMovie] = useState({});
 	useEffect(() => {
 		async function fetchData() {
@@ -16,9 +19,11 @@ function Feature() {
 		}
 		fetchData();
 	}, []);
+	const addFavorite = (movie) => {
+		dispatch(markFav(movie));
+	};
 
 	const imgUrl = `https://image.tmdb.org/t/p/original${movie?.backdrop_path}`;
-	console.log("aaa", imgUrl);
 	return (
 		<div className="feature__secondary">
 			<img
@@ -36,10 +41,17 @@ function Feature() {
 						movie?.original_name ||
 						"Welcome to Netflix"}
 				</h1>
-				<div className="feature__buttons">
-					<button className="feature__button-small">Play</button>
-					<button className="feature__button-small">My List</button>
-				</div>
+				{movie && (
+					<div className="feature__buttons">
+						<button className="feature__button-small">Play</button>
+						<button
+							onClick={() => addFavorite(movie)}
+							className="feature__button-small"
+						>
+							My List
+						</button>
+					</div>
+				)}
 				<div className="feature__description">
 					{movie?.overview || "Enjoy and have fun"}
 				</div>

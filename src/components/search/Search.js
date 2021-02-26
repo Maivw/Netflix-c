@@ -3,20 +3,24 @@ import axios from "../../axios";
 import requests from "../../Requests";
 import "./Search.css";
 import Header from "../header/Header";
+import { useDispatch } from "react-redux";
+import { markFav } from "../../actions/index";
+import MovieDetail from "../movieDetail/MovieDetail";
 
 function Search() {
+	const dispatch = useDispatch();
+	const [isSearch, setIsSearch] = useState(true);
 	const [search, setSearch] = useState("");
 	const [query, setQuery] = useState("netflix");
 	const [movies, setMovies] = useState([]);
 	const [genre, setGenre] = useState("");
-	const fetchUrl = requests.searchMovies;
+	const fetchUrl = requests.search;
 	const fetchUrlBygenre = requests.searchBygenre;
 
 	useEffect(() => {
 		async function fetchMovies() {
 			try {
 				const response = await axios.get(`${fetchUrl}&query=${query}`);
-				console.log("aaaaaaa", response.data.results);
 				const moviesWithOnlyPosters =
 					response.data.results &&
 					response.data.results.filter((item) =>
@@ -35,7 +39,6 @@ function Search() {
 			const response = await axios.get(
 				`${fetchUrlBygenre}&with_genres=${genre}`
 			);
-			console.log("bbb", response.data.results);
 			const moviesWithOnlyPosters =
 				response.data.results &&
 				response.data.results.filter((item) =>
@@ -43,24 +46,30 @@ function Search() {
 				);
 			setMovies(moviesWithOnlyPosters);
 		}
+
 		fetchMovies(query);
 		fetchGenres(genre);
 	}, [query, genre]);
 
-	function updateSearch(e) {
+	const updateSearch = (e) => {
 		setSearch(e.target.value);
-	}
+	};
 
-	function getQuery(e) {
+	const getQuery = (e) => {
 		e.preventDefault();
 		setQuery(search);
+		setIsSearch(true);
 		setSearch("");
-	}
+	};
 
-	function handleGenreChange(e) {
+	const handleGenreChange = (e) => {
 		setGenre(e.target.value);
-	}
-	const baseUrl = "https://image.tmdb.org/t/p/original/";
+	};
+
+	const addFavorite = (movie) => {
+		dispatch(markFav(movie));
+	};
+
 	return (
 		<>
 			<Header />
@@ -103,19 +112,13 @@ function Search() {
 				<div className="search__show">
 					{movies &&
 						movies.map((item) => (
-							<div className="search__show-movie" key={item.id}>
-								<img
-									className="search__show-img"
-									src={`${baseUrl}${item.poster_path}`}
+							<div className="search__movies">
+								<MovieDetail
+									key={item.id}
+									movie={item}
+									callback={addFavorite}
+									isSearch={isSearch}
 								/>
-								<div>
-									<div className="search__show-title">{item.title}</div>
-									<div className="search__show-overview">{item.overview}</div>
-									<div className="search__buttons">
-										<button className="search__button-small">Play</button>
-										<button className="search__button-small">My List</button>
-									</div>
-								</div>
 							</div>
 						))}
 				</div>

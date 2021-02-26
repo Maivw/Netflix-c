@@ -36,16 +36,11 @@
   text-decoration: none;
 }
 
-.header__searchText {
-  font-size: 2.6rem;
-  padding: 1rem 1rem 0 1rem;
-  margin-left: 2rem;
-}
-
-.header__searchText i {
+.header__searchText, .header__myListText {
   font-size: 2rem;
-  margin-top: 1rem;
-  padding: 0 1rem;
+  padding: 2rem 1rem 0 1rem;
+  margin-left: 2rem;
+  cursor: pointer;
 }
 
 .header__top {

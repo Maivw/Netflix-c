@@ -1,0 +1,24 @@
+.my_List {
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto 0;
+}
+
+.my_List-title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  padding: 5rem 0;
+  box-shadow: 0 0 10px 0 #acabab;
+}
+
+.my_List-wrapper {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=MyList.css.map */

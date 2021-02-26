@@ -40,8 +40,14 @@ function Header() {
 
 					{user ? (
 						<div className="header__top-left">
+							<div
+								className="header__myListText"
+								onClick={() => history.push("/my-list")}
+							>
+								My Watch List
+							</div>
 							<div className="header__searchText" onClick={changSearchPage}>
-								Search<i className="bx bx-search"></i>
+								Search
 							</div>
 							<Link to="/profile" className="header__link">
 								<img

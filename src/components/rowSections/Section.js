@@ -14,8 +14,6 @@ function Section({ title, isLargeSection = false, fetchUrl }) {
 		fetchData();
 	}, [fetchUrl]);
 	const baseUrl = "https://image.tmdb.org/t/p/original/";
-
-	console.log("movies", movies);
 	return (
 		<div className="section">
 			<h2 className="section__title">{title}</h2>

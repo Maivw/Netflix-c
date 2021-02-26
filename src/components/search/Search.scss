@@ -1,32 +1,18 @@
 @import "../../utils";
 .search {
-  width: 70%;
+  border-top: 0.1px solid grey;
+  width: 100%;
   height: 100%;
   margin: 2rem auto 0;
-  @include positionAbsolute(absolute, 90%, 50%,translate(-50%, -50%));
-  &__show {
-    &-img {
-    height: 25rem;
-    }
-    &-movie {
-      display: flex;
-      padding: 2rem;
-      
-    }
-    &-overview {
-      padding-left: 5rem;
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
-    &-title {
-      font-size: 2.6rem;
-      padding: 1rem;
-      text-align: center;
-    }
+  padding-top: 3rem;
+  @include positionAbsolute(absolute, 60%, 50%,translate(-50%, -50%));
+  
+  &__movies {
+    margin-top: 5rem;
   }
-  &__wrap:last-child{
-    margin-bottom: 30rem;
-  }
+  // &__wrap:last-child{
+  //   // margin-bottom: 40rem;
+  // }
 
   &__wrap {
     position: relative;

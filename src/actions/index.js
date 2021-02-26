@@ -1,4 +1,10 @@
-import { SIGN_IN, SIGN_OUT, SIGN_UP } from "./type";
+import {
+	SIGN_IN,
+	SIGN_OUT,
+	SIGN_UP,
+	MARK_FAVORITE,
+	REMOVE_FROM_FAVORITE,
+} from "./type";
 export const signIn = (userId) => {
 	return {
 		type: SIGN_IN,
@@ -16,5 +22,18 @@ export const signUp = (user) => {
 export const signOut = () => {
 	return {
 		type: SIGN_OUT,
+	};
+};
+export const markFav = (movie) => {
+	return {
+		type: MARK_FAVORITE,
+		payload: movie,
+	};
+};
+
+export const unMarkFav = (movie) => {
+	return {
+		type: REMOVE_FROM_FAVORITE,
+		payload: movie,
 	};
 };

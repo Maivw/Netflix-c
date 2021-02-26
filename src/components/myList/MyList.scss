@@ -1,0 +1,20 @@
+@import "../../utils";
+.my_List {
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto 0;
+ &-title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  padding: 5rem 0;
+  box-shadow: 0 0 10px 0 rgb(172, 171, 171);
+  
+ }
+ &-wrapper {
+   position: relative;
+   width: 70%;
+   height: 100%;
+   @include positionAbsolute(absolute, 70%, 50%,translate(-50%, -50%));
+ }
+}

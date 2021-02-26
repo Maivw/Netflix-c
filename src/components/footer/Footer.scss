@@ -1,19 +1,17 @@
+@import "../../utils";
 .footer {
   margin: 5rem auto 0;
   padding: 2rem;
   font-size: 1.8rem;
   color: #757575;
-
+  border-top: 0.1px solid gray;
   &__body {
-    display: flex;
-    flex-direction: row;
+    @include displayFlex(flex, row);
     justify-content: space-evenly;
     
   }
   &__row {
-    display: flex;
-    flex-direction: column;
-    // border: 2px solid yellow;
+    @include displayFlex(flex, column);
     line-height: 1.1;
     font-size: 1.8rem;
     & div {
@@ -22,6 +20,10 @@
   }
   &__title {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  & p {
+    padding: 1rem 1rem 1rem 5rem;
   }
 }
