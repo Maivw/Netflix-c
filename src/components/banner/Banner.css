@@ -1,0 +1,89 @@
+.banner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10rem 4rem;
+  z-index: 2;
+}
+
+.banner__subTitle {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: normal;
+  margin: 1.6rem auto;
+}
+
+.banner__title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+
+.banner__title-small {
+  font-size: 2.6rem;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.banner__wrap {
+  padding: 1rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+  outline: none;
+  position: relative;
+}
+
+.banner__wrap img {
+  filter: brightness(0) invert(1);
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-100%, -50%);
+}
+
+.banner__button {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  background: #e50914;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  font-size: 2rem;
+  border: 0;
+  width: 20rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.banner__content {
+  font-size: 1.8rem;
+}
+
+.banner__input {
+  max-width: 40rem;
+  width: 100%;
+  border: 0;
+  padding: 0 2rem;
+  height: 5rem;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.8rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+/*# sourceMappingURL=Banner.css.map */

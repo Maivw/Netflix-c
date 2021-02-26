@@ -1,0 +1,42 @@
+@import "../../utils";
+.banner{
+  @include positionAbsolute(absolute, 10%, 50%,translate(-50%, -50%));
+  @include displayFlex(flex, column);
+	text-align: center;
+	padding: 10rem 4rem;
+  z-index: 2;
+  &__subTitle {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: normal;
+    margin: 1.6rem auto;
+  }
+  &__title {
+    @include bigTitle();
+    margin: 0 auto;
+    max-width: 64rem;
+    &-small {
+      font-size: 2.6rem;
+      padding: 1rem;
+      margin-left: 2rem;
+    }
+  }
+
+  &__wrap {
+    @include wrap ();
+    & img {
+      @include arrowImg();
+      @include positionAbsolute(absolute, 50%, 95%,translate(-100%, -50%));
+    }
+  }
+ 
+  &__button { 
+    @include btnTryItNow();
+  }
+  &__content {
+    font-size: 1.8rem;
+  }
+  &__input {
+    @include bigInput();
+   }
+}

@@ -1,0 +1,202 @@
+$bg-color-red: #e50914;
+$bg-color-red-hover: #f40612;
+@mixin btnTryItNow {
+  border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    background: $bg-color-red;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    font-size: 2rem;
+    border: 0;
+    width: 20rem;
+    cursor: pointer;
+    outline: none;
+}
+@mixin bigInput {
+  max-width: 40rem;
+  width: 100%;
+  border: 0;
+  padding: 0 2rem;
+  height: 5rem;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.8rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  
+}
+@mixin bigTitle {
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+}
+@mixin wrap {
+  padding: 1rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+  outline: none;
+  position: relative;
+}
+@mixin  arrowImg {
+  filter: brightness(0) invert(1);
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  z-index: 100;
+}
+@mixin positionAbsolute($position, $top, $left,$tranform) {
+  position: $position;
+  top:$top;
+  left: $left;
+  transform : $tranform;
+}
+@mixin displayFlex($display, $flexDirection) {
+  display: $display;
+  flex-direction: $flexDirection;
+}
+
+@mixin googleButtonSignIn($background-image, $background-color, $background-repeat, $background-position) {
+  background-image: $background-image;
+  background-color: $background-color;
+  background-repeat: $background-repeat;
+  background-position: $background-position;
+
+}
+@mixin button {
+  display: block;
+    background-color: $bg-color-red;
+    width: 100%;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+  text-decoration: none;
+    &:hover {
+    background:$bg-color-red-hover;
+  }
+}
+
+@mixin groupButtons {
+  margin-left: 2rem;
+}
+@mixin buttonSmall {
+  cursor: pointer;
+    color:white;
+    outline:none;
+    border: 0.1px solid rgba(88, 88, 88, 0.5);
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    width: 8rem;
+    margin-right: 2rem;
+    background-color: rgba(36, 35, 35, 0.5);
+    &:hover {
+      background-color: #fff;
+      color: black;
+      transition: all 0.25s linear;
+    }
+}
+@mixin signUp-SingIn {
+  position: relative;
+  &__bgImage {
+    width: 100%;
+  };
+
+  &__logo {
+    height: 6rem;
+    width: 15rem;
+    position: absolute;
+    bottom: 90%;
+    z-index: 2;
+    padding: 1rem 3rem;
+    
+  
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-top: -10rem;
+    color: white;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 55rem;
+    height: 70rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__Innerform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 35rem;
+  }
+  &__input {
+    width: 100%;
+    border: 0;
+    padding: 0 2rem;
+    height: 5rem;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1.5rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+
+  }
+  &__button, &__googleButton  {
+    @include button();
+    padding: 1rem 1.5rem;
+    margin: 2rem;
+    height: 5rem;
+  }
+
+  &__googleButton {
+    @include googleButtonSignIn(url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=), white, no-repeat, 1.5rem 1.2rem);
+    color:#e50914;
+    &:hover { 
+      color: white;
+      @include googleButtonSignIn(url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=), #f40612, no-repeat, 1.5rem 1.2rem);
+      
+    }
+  }
+
+  &__toSignUp, &__link {
+    font-size: 1.8rem;
+    color:white;
+    text-decoration: none;
+    margin: 2rem 0.5rem;
+  }
+  &__link{
+    &:hover {
+      color:$bg-color-red;
+    }
+  }
+  &__more {
+    font-size: 1.5rem;
+    color:#757575;
+    width: 70%;
+    line-height: 1.1;
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../utils";
+.search {
+  width: 70%;
+  height: 100%;
+  margin: 2rem auto 0;
+  @include positionAbsolute(absolute, 90%, 50%,translate(-50%, -50%));
+  &__show {
+    &-img {
+    height: 25rem;
+    }
+    &-movie {
+      display: flex;
+      padding: 2rem;
+      
+    }
+    &-overview {
+      padding-left: 5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    &-title {
+      font-size: 2.6rem;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+  &__wrap:last-child{
+    margin-bottom: 30rem;
+  }
+
+  &__wrap {
+    position: relative;
+    @include wrap ();
+  }
+  &__buttons {
+    @include groupButtons ();
+    text-align: right;
+    margin-top: 2rem
+  }
+  &__button-small {
+    @include buttonSmall ();
+  }
+
+  &__button { 
+    @include btnTryItNow();
+  }
+  &__content {
+    font-size: 1.8rem;
+  }
+  &__input {
+    @include bigInput();
+  }
+  & select {
+    width: 60rem;
+    outline: none;
+    font-size: 1.8rem;
+    color:gray;
+    padding: 0 2rem;
+    appearance:unset;
+    border-radius: 0.5rem;
+  }
+}

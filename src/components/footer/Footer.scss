@@ -1,0 +1,27 @@
+.footer {
+  margin: 5rem auto 0;
+  padding: 2rem;
+  font-size: 1.8rem;
+  color: #757575;
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+  &__row {
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid yellow;
+    line-height: 1.1;
+    font-size: 1.8rem;
+    & div {
+      padding: 1rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,114 @@
+.acoordion {
+  text-align: center;
+  max-width: 815px;
+  margin: 2rem auto;
+}
+
+.acoordion__title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.acoordion__header {
+  font-size: 2.6rem;
+  font-weight: normal;
+  background-image: radial-gradient(circle at center center, #404040, #080808);
+  padding: 1rem;
+  position: relative;
+}
+
+.acoordion__header img {
+  filter: brightness(0) invert(1);
+  height: 2rem;
+  width: 2rem;
+  position: sticky;
+  left: 70%;
+}
+
+.acoordion__answer {
+  padding: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.acoordion__questions {
+  display: flex;
+  padding: 70px 45px;
+  flex-direction: column;
+  max-width: 815px;
+  margin: auto;
+}
+
+.acoordion__question {
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  max-width: 728px;
+  width: 100%;
+}
+
+.acoordion__wrap {
+  padding: 1rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+  outline: none;
+  position: relative;
+}
+
+.acoordion__wrap img {
+  filter: brightness(0) invert(1);
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-100%, -50%);
+}
+
+.acoordion__button {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  background: #e50914;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  font-size: 2rem;
+  border: 0;
+  width: 20rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.acoordion__content {
+  font-size: 1.8rem;
+}
+
+.acoordion__input {
+  max-width: 40rem;
+  width: 100%;
+  border: 0;
+  padding: 0 2rem;
+  height: 5rem;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.8rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.acoordion__footer {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=Acoordion.css.map */

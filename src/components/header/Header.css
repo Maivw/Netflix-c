@@ -1,0 +1,73 @@
+.header__logo {
+  height: 6rem;
+  width: 15rem;
+  padding: 1rem 3rem 0rem 3rem;
+}
+
+.header {
+  position: relative;
+}
+
+.header__button {
+  display: block;
+  background: #e50914;
+  width: 9rem;
+  margin-right: 4rem;
+  height: fit-content;
+  color: white;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header__button:hover {
+  background: #f40612;
+}
+
+.header__bgImage {
+  width: 100%;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__searchText {
+  font-size: 2.6rem;
+  padding: 1rem 1rem 0 1rem;
+  margin-left: 2rem;
+}
+
+.header__searchText i {
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.header__top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0);
+}
+
+.header__top-left {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.header__accountImage {
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem 3rem 0rem 3rem;
+}
+/*# sourceMappingURL=Header.css.map */

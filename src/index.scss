@@ -1,0 +1,43 @@
+#root {
+	height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: radial-gradient(circle at 99% 33%, rgba(25,24,24, 0.09) 0%, rgba(25,24,24, 0.09) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, rgba(25,24,24, 0.09) 0%, rgba(25,24,24, 0.09) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, rgba(25,24,24, 0.09) 0%, rgba(25,24,24, 0.09) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, rgba(25,24,24, 0.09) 0%, rgba(25,24,24, 0.09) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, rgba(25,24,24, 0.09) 0%, rgba(25,24,24, 0.09) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0))!important;
+}
+
+$color-bg: radial-gradient(circle at center center, rgb(15, 14, 14),rgb(8, 8, 8))!important;
+$color-text: white;
+$color-border: #0e414918;
+$color-text-2:#116b64b2;
+$color-like: #025f57ec;
+$color-hover: #cbf0f79c;
+$color-icon-bg: #b7f2f89d;
+$padding-header: 2rem 3rem;
+$padding-icon: 0.5rem 2rem 0.5rem 1rem;
+$borderRadius: 1.5rem;
+$boxShadow: 0 0 10px  0 #71d5e063;
+$fontWeight: 300;
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-size: 1.6rem;
+  color: white;
+  margin: 0;
+  top:0;
+ 
+}
+
+
+* {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100vh;
+  background-color: black;
+}

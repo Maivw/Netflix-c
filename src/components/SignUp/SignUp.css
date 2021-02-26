@@ -1,0 +1,117 @@
+.signUp {
+  position: relative;
+}
+
+.signUp__bgImage {
+  width: 100%;
+}
+
+.signUp__logo {
+  height: 6rem;
+  width: 15rem;
+  position: absolute;
+  bottom: 90%;
+  z-index: 2;
+  padding: 1rem 3rem;
+}
+
+.signUp__title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  margin-top: -10rem;
+  color: white;
+}
+
+.signUp__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 55rem;
+  height: 70rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signUp__Innerform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  width: 35rem;
+}
+
+.signUp__input {
+  width: 100%;
+  border: 0;
+  padding: 0 2rem;
+  height: 5rem;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+}
+
+.signUp__button, .signUp__googleButton {
+  display: block;
+  background-color: #e50914;
+  width: 100%;
+  color: white;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  margin: 2rem;
+  height: 5rem;
+}
+
+.signUp__button:hover, .signUp__googleButton:hover {
+  background: #f40612;
+}
+
+.signUp__googleButton {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 1.5rem 1.2rem;
+  color: #e50914;
+}
+
+.signUp__googleButton:hover {
+  color: white;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: #f40612;
+  background-repeat: no-repeat;
+  background-position: 1.5rem 1.2rem;
+}
+
+.signUp__toSignUp, .signUp__link {
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  margin: 2rem 0.5rem;
+}
+
+.signUp__link:hover {
+  color: #e50914;
+}
+
+.signUp__more {
+  font-size: 1.5rem;
+  color: #757575;
+  width: 70%;
+  line-height: 1.1;
+}
+/*# sourceMappingURL=SignUp.css.map */

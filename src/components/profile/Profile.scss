@@ -1,0 +1,64 @@
+@import "../../utils";
+.profile__wrapper {
+  position: relative;
+}
+.profile {
+  width: 50%;
+  height: 50%;
+  @include positionAbsolute(absolute, 50%, 50%,translate(-50%, -50%));
+  background-color: black;
+  box-shadow: 0 0 10px 0 rgb(172, 171, 171);
+  border-radius: 0.5rem;
+  opacity: 0.7!important;
+  &__button {
+    @include button();
+    padding: 1.5rem;
+    margin-top: 5rem;
+  }
+  &__content {
+    @include displayFlex(flex, row);
+    &-left {
+      flex:0.3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-right {
+      flex:0.6;
+      padding: 3rem;
+    }
+  }
+  &__name {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  &__plans {
+    margin-bottom: 2rem;
+    padding:1.5rem;
+    width: 100%;
+    border-bottom: 0.1px solid gray;
+  }
+  &__renewal {
+    padding: 1.5rem;
+    width: 100%;
+    border-bottom: 0.1px solid gray;
+  }
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-top: -10rem;
+    color: white;
+    
+  }
+}
+.profile__accountImage {
+  height: 10rem;
+  width: 10rem;
+}
