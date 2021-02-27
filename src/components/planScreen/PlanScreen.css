@@ -1,0 +1,71 @@
+.planScreen__name {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.planScreen__plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  opacity: 0.8;
+}
+
+.planScreen__plan:hover {
+  color: whitesmoke;
+  background-color: #111;
+  transition: all 0.25 linear;
+}
+
+.planScreen__renewal {
+  padding: 1.5rem 0;
+  text-align: right;
+  width: 100%;
+  border-bottom: 0.1px solid gray;
+}
+
+.button {
+  display: block;
+  background-color: #e50914;
+  width: 100%;
+  color: white;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  width: 15rem;
+  padding: 1rem 0;
+  outline: none !important;
+}
+
+.button:hover {
+  background: #f40612;
+}
+
+.button__disabled {
+  display: block;
+  background-color: #e50914;
+  width: 100%;
+  color: white;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  width: 15rem;
+  padding: 1rem 0;
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.button__disabled:hover {
+  background: #f40612;
+}
+
+.button__disabled:hover {
+  background-color: lightgray;
+  outline: none !important;
+}
+/*# sourceMappingURL=PlanScreen.css.map */

@@ -6,6 +6,7 @@ import Header from "../header/Header";
 import { auth } from "../../firebase";
 import { useDispatch } from "react-redux";
 import { signOut } from "../../actions/index";
+import PlanScreen from "../planScreen/PlanScreen";
 
 function Profile() {
 	const dispatch = useDispatch();
@@ -31,8 +32,9 @@ function Profile() {
 					</div>
 					<div className="profile__content-right">
 						<div className="profile__name">{user?.email}</div>
-						<div className="profile__plans">Plans: (Current Plan: premium)</div>
-						<div className="profile__renewal">Renewal date:</div>
+						<div className="profile__plans">
+							<PlanScreen />
+						</div>
 						<div className="profile__button" onClick={logOut}>
 							Sign Out
 						</div>

@@ -4,12 +4,12 @@
 }
 .profile {
   width: 50%;
-  height: 50%;
+  height: fit-content;
   @include positionAbsolute(absolute, 50%, 50%,translate(-50%, -50%));
   background-color: black;
   box-shadow: 0 0 10px 0 rgb(172, 171, 171);
   border-radius: 0.5rem;
-  opacity: 0.7!important;
+  opacity: 0.8!important;
   &__button {
     @include button();
     padding: 1.5rem;
@@ -44,11 +44,7 @@
     width: 100%;
     border-bottom: 0.1px solid gray;
   }
-  &__renewal {
-    padding: 1.5rem;
-    width: 100%;
-    border-bottom: 0.1px solid gray;
-  }
+ 
   &__title {
     font-size: 5rem;
     font-weight: 700;

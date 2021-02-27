@@ -4,7 +4,7 @@
 
 .profile {
   width: 50%;
-  height: 50%;
+  height: fit-content;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,7 +12,7 @@
   background-color: black;
   box-shadow: 0 0 10px 0 #acabab;
   border-radius: 0.5rem;
-  opacity: 0.7 !important;
+  opacity: 0.8 !important;
 }
 
 .profile__button {
@@ -64,12 +64,6 @@
 
 .profile__plans {
   margin-bottom: 2rem;
-  padding: 1.5rem;
-  width: 100%;
-  border-bottom: 0.1px solid gray;
-}
-
-.profile__renewal {
   padding: 1.5rem;
   width: 100%;
   border-bottom: 0.1px solid gray;

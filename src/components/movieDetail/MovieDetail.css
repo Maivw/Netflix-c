@@ -1,16 +1,19 @@
 .movie {
-  width: 70%;
+  width: 80%;
   height: 100%;
   margin: 5rem auto 0;
   background-color: #111;
   border-radius: 0.5rem;
   opacity: 0.8;
+  box-shadow: 0 0 10px 0 #acabab;
   display: flex;
   flex-direction: row;
 }
 
 .movie__img {
   height: 35rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .movie__overview {

@@ -1,0 +1,44 @@
+@import "../../utils";
+.planScreen {
+  &__name {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+  }
+  &__plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    opacity: 0.8;
+    &:hover {
+     color: whitesmoke;
+     background-color: #111;
+     transition: all 0.25 linear;
+    } 
+  }
+  &__renewal {
+    padding: 1.5rem 0;
+    text-align: right;
+    width: 100%;
+    border-bottom: 0.1px solid gray;
+  }
+  
+}
+.button {
+  @include button();
+  width: 15rem;
+  padding: 1rem 0;
+  outline: none !important
+  
+}
+.button__disabled {
+  @include button();
+  width: 15rem;
+  padding: 1rem 0;
+  background-color: gray;
+  cursor: not-allowed;
+  &:hover {
+    background-color: lightgray;
+    outline: none !important
+  }
+
+}

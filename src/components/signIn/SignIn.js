@@ -7,8 +7,8 @@ import { signIn } from "../../actions/index";
 function SignIn() {
 	const dispatch = useDispatch();
 	const history = useHistory();
-	const [email, setEmail] = useState("demo@gmail.com");
-	const [password, setPassword] = useState("password123321");
+	const [email, setEmail] = useState("demoUser@gmail.com");
+	const [password, setPassword] = useState("password");
 	const handleLogin = (e) => {
 		e.preventDefault();
 		auth

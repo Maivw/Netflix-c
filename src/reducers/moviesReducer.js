@@ -6,15 +6,22 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case MARK_FAVORITE:
+			const i = state.moviesFav.findIndex(
+				(item) => item.id === action.payload.id
+			);
+			let newFav = [...state.moviesFav];
+
+			if (i < 0) {
+				newFav = [...newFav, action.payload];
+			}
 			return {
 				...state,
-				moviesFav: [...state.moviesFav, action.payload],
+				moviesFav: [...newFav],
 			};
 		case REMOVE_FROM_FAVORITE:
 			const index = state.moviesFav.findIndex(
 				(item) => item.id === action.payload.id
 			);
-			console.log("index", index);
 			let newFavList = [...state.moviesFav];
 
 			if (index >= 0) {
