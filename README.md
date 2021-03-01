@@ -16,8 +16,8 @@
   - [Technical Overview](#technical-overview)
 
 ## Non-Technical Overview
-This project is a simplified front end clone of Netflix. It was created with React, firebase (for hosting and authentication), and firebase Stripe extentsion so users can make a payment with Stripe. It uses The MovieDB APIs to search for movies and display details.
-#### Core Features: 
+This project is a simplified front end clone of Netflix. It was created with React, firebase (for hosting and authentication), and firebase Stripe extension so users can make a payment with Stripe. It uses The MovieDB APIs to search for movies and display details.
+#### Core Features
 * Login, logout and create a new account. 
 * Access to the list of movies.
 * Search, add, remove movie from the wished list.
