@@ -3,12 +3,10 @@
 }
 
 .profile {
-  width: 50%;
+  width: 60%;
+  margin: 3rem auto;
   height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 5rem 0;
   background-color: black;
   box-shadow: 0 0 10px 0 #acabab;
   border-radius: 0.5rem;
@@ -42,20 +40,20 @@
 .profile__content-left {
   flex: 0.3;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .profile__content-right {
   flex: 0.6;
-  padding: 3rem;
 }
 
 .profile__name {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.5rem;
-  margin: 2rem 0;
+  margin: 0rem 0;
   background-color: gray;
   color: white;
   text-align: center;
@@ -63,18 +61,16 @@
 }
 
 .profile__plans {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
   width: 100%;
   border-bottom: 0.1px solid gray;
 }
 
 .profile__title {
-  font-size: 5rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin-bottom: 3rem;
-  margin-top: -10rem;
   color: white;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .profile__accountImage {

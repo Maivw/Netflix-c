@@ -4,6 +4,7 @@ import {
 	SIGN_UP,
 	MARK_FAVORITE,
 	REMOVE_FROM_FAVORITE,
+	MAKE_PAYMENT,
 } from "./type";
 export const signIn = (userId) => {
 	return {
@@ -35,5 +36,12 @@ export const unMarkFav = (movie) => {
 	return {
 		type: REMOVE_FROM_FAVORITE,
 		payload: movie,
+	};
+};
+export const makePayment = (payment) => {
+	console.log("ooooo", payment);
+	return {
+		type: MAKE_PAYMENT,
+		payload: payment,
 	};
 };

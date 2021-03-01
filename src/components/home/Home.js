@@ -12,8 +12,8 @@ import "./Home.css";
 function App() {
 	return (
 		<div className="home">
-			<Banner />
 			<Header />
+			<Banner />
 			<Jumbotron />
 			<Acoordion />
 			<Footer />

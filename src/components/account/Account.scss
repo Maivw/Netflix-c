@@ -1,0 +1,22 @@
+@import "../../utils";
+.account {
+  @include positionAbsolute(absolute, 50%, 50%, translate(-50%, -50%));
+  
+  height: fit-content;
+  &__question {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 0.1px solid grey;
+    padding: 1.5rem 0;
+  }
+  &__name {
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+}
+button {
+  @include button();
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}

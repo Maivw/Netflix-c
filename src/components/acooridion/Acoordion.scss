@@ -50,7 +50,7 @@
     @include wrap();
     & img {
       @include arrowImg();
-      @include positionAbsolute(absolute, 50%, 85%,translate(-100%, -50%));
+      @include positionAbsolute(absolute, 50%, 87%,translate(-100%, -50%));
     }  
   }
   &__button { 

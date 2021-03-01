@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 function Banner() {
 	const history = useHistory();
 	const user = useSelector((state) => state.user.user);
+	const isPaid = useSelector((state) => state.payment.payment);
 	return (
 		<div className="banner">
 			<div className="banner__title">
@@ -15,22 +16,21 @@ function Banner() {
 			<form className="banner__form">
 				<div className="banner__wrap">
 					<input className="banner__input" placeholder="Email Address" />
-					{user ? (
-						<button
+					{user && isPaid === " active" ? (
+						<div
 							onClick={() => history.push("/main")}
 							className="banner__button"
 						>
 							Get started
-						</button>
+						</div>
 					) : (
-						<button
+						<div
 							onClick={() => history.push("/signIn")}
 							className="banner__button"
 						>
 							Try it Now
-						</button>
+						</div>
 					)}
-
 					<img src="/images/icons/chevron-right.png" alt="Try now" />
 				</div>
 				<div className="banner__content">

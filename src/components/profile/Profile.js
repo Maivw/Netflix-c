@@ -17,13 +17,17 @@ function Profile() {
 		auth.signOut();
 		history.push("/");
 	};
+	const isPaid = useSelector((state) => state.payment.payment);
+	const changSearchPage = () => {
+		isPaid ? history.push("/search") : history.push("/profile");
+	};
 	return (
-		<div className="profile__wrapper">
+		<div className="profile__wrapper ">
 			<Header />
 			<div className="profile">
-				<div className="profile__title">Edit Profile</div>
 				<div className="profile__content">
 					<div className="profile__content-left">
+						<div className="profile__title">Your Profile</div>
 						<img
 							src="https://cdn4.iconfinder.com/data/icons/ui-user-interface-line-circle-multi-color/750/93_-_User-512.png"
 							alt="account"
@@ -34,6 +38,17 @@ function Profile() {
 						<div className="profile__name">{user?.email}</div>
 						<div className="profile__plans">
 							<PlanScreen />
+						</div>
+						<div
+							className="header__myListText"
+							onClick={() =>
+								isPaid ? history.push("/my-list") : history.push("/profile")
+							}
+						>
+							My Watch List
+						</div>
+						<div className="header__searchText" onClick={changSearchPage}>
+							Search
 						</div>
 						<div className="profile__button" onClick={logOut}>
 							Sign Out

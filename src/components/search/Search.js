@@ -82,7 +82,9 @@ function Search() {
 							value={search}
 							onChange={updateSearch}
 						/>
-						<button className="search__button">Search</button>
+						<div onClick={getQuery} className="search__button">
+							Search
+						</div>
 					</div>
 					<div className="search__wrap">
 						<select

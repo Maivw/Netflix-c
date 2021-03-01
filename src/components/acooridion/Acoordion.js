@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import faqsData from "../../fixtures/faqs.json";
 import "./Acoordion.css";
+import { useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 
 function Acoordion() {
 	const [toggle, setToggle] = useState(null);
 	const [selected, setSelected] = useState();
+	const history = useHistory();
+	const user = useSelector((state) => state.user.user);
+	const isPaid = useSelector((state) => state.payment.payment);
 
 	return (
 		<div className="acoordion">
@@ -39,7 +44,21 @@ function Acoordion() {
 			<div className="acoordion__footer">
 				<div className="acoordion__wrap">
 					<input className="acoordion__input" placeholder="Email Address" />
-					<button className="acoordion__button">Try it Now</button>
+					{user && isPaid === " active" ? (
+						<div
+							onClick={() => history.push("/main")}
+							className="acoordion__button"
+						>
+							Get started
+						</div>
+					) : (
+						<div
+							onClick={() => history.push("/signIn")}
+							className="acoordion__button"
+						>
+							Try it Now
+						</div>
+					)}
 					<img src="/images/icons/chevron-right.png" alt="Try now" />
 				</div>
 				<div className="acoordion__content">

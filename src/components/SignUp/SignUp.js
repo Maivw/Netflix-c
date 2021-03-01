@@ -26,13 +26,10 @@ function SignUp() {
 				);
 			})
 			.catch((err) => alert(err.message));
-		history.push("/main");
+		history.push("/account");
 	};
 	return (
 		<div className="signUp">
-			<div>
-				<img src="../../images/misc/home-bg.jpg" className="signUp__bgImage" />
-			</div>
 			<div>
 				<Link to="/">
 					<img

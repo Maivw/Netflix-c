@@ -1,9 +1,10 @@
 @import "../../utils";
 .banner{
-  @include positionAbsolute(absolute, 10%, 50%,translate(-50%, -50%));
+  background: url("https://res.cloudinary.com/maivw/image/upload/v1614628492/home-bg_xflumm.jpg");
   @include displayFlex(flex, column);
 	text-align: center;
-	padding: 10rem 4rem;
+	padding: 30rem 0;
+  margin-top: -10rem;
   z-index: 2;
   &__subTitle {
     color: white;
@@ -26,7 +27,7 @@
     @include wrap ();
     & img {
       @include arrowImg();
-      @include positionAbsolute(absolute, 50%, 95%,translate(-100%, -50%));
+      @include positionAbsolute(absolute, 50%, 70%,translate(-100%, -50%));
     }
   }
  

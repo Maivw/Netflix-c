@@ -1,29 +1,40 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../../firebase";
 import "./PlanScreen.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
+import { makePayment } from "../../actions/index";
 
 function PlanScreen() {
+	const [status, setStatus] = useState(false);
+	const dispatch = useDispatch();
 	const [products, setProducts] = useState([]);
 	const user = useSelector((state) => state.user.user);
 	const [subscription, setSubscription] = useState("");
 	useEffect(() => {
 		db.collection("customers")
-			.doc(user.uid)
+			.doc(user?.uid)
 			.collection("subscriptions")
 			.get()
 			.then((querySnapshot) => {
 				querySnapshot.forEach(async (subscription) => {
-					setSubscription({
-						role: subscription.data().role,
-						current_period_end: subscription.data().current_period_end.seconds,
-						current_period_start: subscription.data().current_period_start
-							.seconds,
-					});
+					setSubscription(
+						await {
+							role: subscription.data().role,
+							status: subscription.data().status,
+							current_period_end: subscription.data().current_period_end
+								.seconds,
+							current_period_start: subscription.data().current_period_start
+								.seconds,
+						}
+					);
 				});
 			});
 	}, []);
+	useEffect(() => {
+		setStatus(subscription?.status);
+		dispatch(makePayment(status));
+	}, [subscription]);
 	useEffect(() => {
 		db.collection("products")
 			.where("active", "==", true)
@@ -67,7 +78,8 @@ function PlanScreen() {
 			}
 		});
 	};
-	console.log("subscriptions", subscription);
+	const isPaid = useSelector((state) => state.payment.payment);
+	console.log("isPaid", isPaid);
 	return (
 		<div className="planScreen">
 			{subscription && (
@@ -88,11 +100,14 @@ function PlanScreen() {
 				return (
 					<div className="planScreen__plan" key={productId}>
 						<div className="planScreen__info">
-							<h5>{productData.name}</h5>
-							<h6>{productData.description}</h6>
+							<h5>
+								{productData.name} <span>{productData.description}</span>
+							</h5>
 						</div>
 						<button
-							className={`${isCurrentPackage ? "button__disabled" : "button"} `}
+							className={`${
+								isCurrentPackage ? "button__plan-disabled" : "button__plan"
+							} `}
 							onClick={() =>
 								!isCurrentPackage && loadCheckout(productData?.prices.priceId)
 							}

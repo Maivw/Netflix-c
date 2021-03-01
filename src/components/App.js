@@ -7,11 +7,12 @@ import Profile from "./profile/Profile";
 import HomeScreen from "./home/HomeScreen";
 import Search from "./search/Search";
 import MyList from "./myList/MyList";
+import Account from "./account/Account";
 import "../index.css";
 
 function App() {
 	return (
-		<div className="app">
+		<div>
 			<BrowserRouter>
 				<Switch>
 					<Route exact path="/" component={Home} />
@@ -21,11 +22,7 @@ function App() {
 					<Route path="/profile" exact={true} component={Profile} />
 					<Route path="/search" exact={true} component={Search} />
 					<Route path="/my-list" exact={true} component={MyList} />
-
-					{/*
-					<Route path="/cart" exact={true} component={CartScreen} />
-					<Route path="/favorite" exact={true} component={FavoriteProducts} />
-					<Route path="/checkout" exact={true} component={Checkout} /> */}
+					<Route path="/account" exact={true} component={Account} />
 				</Switch>
 			</BrowserRouter>
 		</div>

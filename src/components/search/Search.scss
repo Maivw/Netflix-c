@@ -1,6 +1,6 @@
 @import "../../utils";
 .search {
-  border-top: 0.1px solid grey;
+  
   width: 100%;
   height: 100%;
   margin: 2rem auto 0;
@@ -10,9 +10,6 @@
   &__movies {
     margin-top: 5rem;
   }
-  // &__wrap:last-child{
-  //   // margin-bottom: 40rem;
-  // }
 
   &__wrap {
     position: relative;
@@ -29,6 +26,7 @@
 
   &__button { 
     @include btnTryItNow();
+    outline: none !important;
   }
   &__content {
     font-size: 1.8rem;

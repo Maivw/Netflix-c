@@ -1,4 +1,8 @@
-import { MARK_FAVORITE, REMOVE_FROM_FAVORITE } from "../actions/type";
+import {
+	MARK_FAVORITE,
+	REMOVE_FROM_FAVORITE,
+	MAKE_PAYMENT,
+} from "../actions/type";
 const INITIAL_STATE = {
 	moviesFav: [],
 };

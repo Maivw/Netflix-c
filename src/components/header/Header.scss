@@ -2,11 +2,18 @@
 .header__logo {
   height: 6rem;
   width: 15rem;
-  padding: 1rem 3rem 0rem 3rem;
+  margin-top: 1rem;
 }
 
 .header {
-  position: relative;
+  position: sticky;
+  top:0;
+  height: 8rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  opacity: 0.7;
   &__button {
     display: block;
     background: $bg-color-red;
@@ -17,7 +24,7 @@
     border: 0;
     font-size: 1.5rem;
     border-radius: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 1rem 1.5rem;
     cursor: pointer;
     text-decoration: none;

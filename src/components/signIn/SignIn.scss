@@ -1,4 +1,9 @@
 @import "../../utils";
 .signIn {
+  background: url("https://res.cloudinary.com/maivw/image/upload/v1614628492/home-bg_xflumm.jpg");
   @include signUp-SingIn ();
+  @include displayFlex(flex, column);
+  &__form {
+    margin: 5rem auto;
+  }
 }

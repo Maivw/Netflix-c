@@ -9,8 +9,8 @@ function HomeScreen() {
 	return (
 		<div className="home">
 			<div className="home__top">
-				<Feature />
 				<Header />
+				<Feature />
 			</div>
 			<div className="home__body">
 				<Section

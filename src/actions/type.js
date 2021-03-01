@@ -3,3 +3,4 @@ export const SIGN_UP = "SIGN_UP";
 export const SIGN_OUT = "SIGN_OUT";
 export const MARK_FAVORITE = "MARK_FAVORITE";
 export const REMOVE_FROM_FAVORITE = "REMOVE_FROM_FAVORITE";
+export const MAKE_PAYMENT = "MAKE_PAYMENT";

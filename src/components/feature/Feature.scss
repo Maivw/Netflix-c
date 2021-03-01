@@ -1,15 +1,11 @@
 @import "../../utils";
 .feature {
-  position: absolute;
-  top:10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   display: flex;
 	flex-direction: column;
 	border-bottom: 0.5rem solid #222;
 	text-align: center;
 	padding: 10rem 4rem;
-  z-index: 2;
   &__subTitle {
     color: white;
     font-size: 2.6rem;
@@ -42,10 +38,7 @@
       height: 2rem;
       width: 2rem;
       position: absolute;
-      z-index: 100;
-      top:50%;
-      left: 95%;
-      transform: translate(-100%, -50%);
+     
       
     }
   }
@@ -82,14 +75,6 @@
   }
 }
 .feature__secondary {
- 
-  position: absolute;
-  top: 5%;
-  left: 0%;
-  z-index: 2;
-  height: 40%;
-  width: 1000%;
-  padding :2rem 0;
   &-body {
     position: absolute;
     top: 30%;
@@ -98,7 +83,7 @@
     background-position: center center;
     object-fit: cover;
     max-width: 100vw;
-    margin-top: -3rem;
+    box-shadow: 0 0 20px 0 rgb(172, 171, 171);
   }
 }
 .feature{

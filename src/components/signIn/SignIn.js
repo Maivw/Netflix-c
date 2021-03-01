@@ -4,6 +4,7 @@ import "./SignIn.css";
 import { auth, googleProvider } from "../../firebase";
 import { useDispatch } from "react-redux";
 import { signIn } from "../../actions/index";
+
 function SignIn() {
 	const dispatch = useDispatch();
 	const history = useHistory();
@@ -23,7 +24,7 @@ function SignIn() {
 			})
 			.catch((err) => alert(err));
 
-		history.push("/main");
+		history.push("/account");
 	};
 	const handleLoginGoogle = (e) => {
 		e.preventDefault();
@@ -39,14 +40,11 @@ function SignIn() {
 			})
 			.catch((err) => alert(err));
 
-		history.push("/main");
+		history.push("/account");
 	};
 
 	return (
 		<div className="signIn">
-			<div>
-				<img src="../../images/misc/home-bg.jpg" className="signIn__bgImage" />
-			</div>
 			<div>
 				<Link to="/">
 					<img
