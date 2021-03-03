@@ -36,3 +36,14 @@
     @include buttonSmall();
   }
 }
+@media (min-width: 280px) and(max-width:480px) {
+  .movie{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    &__buttons {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+}

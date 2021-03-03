@@ -7,25 +7,43 @@ import requests from "../../Requests";
 
 function HomeScreen() {
 	return (
-		<div className="home">
-			<div className="home__top">
+		<div className="homeScreen">
+			<div className="homeScreen__top">
 				<Header />
 				<Feature />
 			</div>
-			<div className="home__body">
+			<div className="homeScreen__body">
 				<Section
 					title="NETFLIX ORIGINALS"
 					fetchUrl={requests.fetchNetflixOriginals}
 					isLargeSection={true}
+					key={1}
 				/>
-				<Section title="Trending now" fetchUrl={requests.fetchTrending} />
-				<Section title="Comedy movies" fetchUrl={requests.fetchComedyMovies} />
-				<Section title="Horror movies" fetchUrl={requests.fetchHorrorMovies} />
+				<Section
+					title="Trending now"
+					fetchUrl={requests.fetchTrending}
+					key={2}
+				/>
+				<Section
+					title="Comedy movies"
+					fetchUrl={requests.fetchComedyMovies}
+					key={3}
+				/>
+				<Section
+					title="Horror movies"
+					fetchUrl={requests.fetchHorrorMovies}
+					key={4}
+				/>
 				<Section
 					title="Ronance movies"
 					fetchUrl={requests.fetchRomanceMovies}
+					key={5}
 				/>
-				<Section title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+				<Section
+					title="Documentaries"
+					fetchUrl={requests.fetchDocumentaries}
+					key={6}
+				/>
 			</div>
 		</div>
 	);

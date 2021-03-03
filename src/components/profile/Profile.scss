@@ -4,17 +4,19 @@
 }
 .profile {
   width: 60%;
-  margin: 3rem auto;
-  height: fit-content;
+  margin: 0 auto;
+  height: 100%;
   padding: 5rem 0;
   background-color: black;
   box-shadow: 0 0 10px 0 rgb(172, 171, 171);
   border-radius: 0.5rem;
   opacity: 0.8!important;
+  font-size: 1.5rem;
+  z-index: 3;
   &__button {
     @include button();
-    padding: 1.5rem;
-    margin-top: 5rem;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
   }
   &__content {
     @include displayFlex(flex, row);
@@ -30,18 +32,21 @@
     }
   }
   &__name {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    margin: 0rem 0;
-    background-color: gray;
-    color: white;
-    text-align: center;
-    border-radius: 0.5rem;
+    padding: 2rem;
   }
   &__plans {
     width: 100%;
     border-bottom: 0.1px solid gray;
+  }
+  &__myListText {
+    font-size: 1.8rem;
+    padding: 2rem 0;
+    font-weight: 700;
+  }
+  &__search{
+    font-size: 1.8rem;
+    padding: 2rem 0;
+    font-weight: 700;
   }
  
   &__title {
@@ -56,4 +61,42 @@
 .profile__accountImage {
   height: 10rem;
   width: 10rem;
+}
+@media (min-width: 280px) and(max-width:480px) {
+  .profile {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    &__button {
+      @include button();
+      padding: 1.2rem 0;
+    }
+    &__content {
+      @include displayFlex(flex, column);
+      &-left{ 
+        padding: 1rem 0;
+      }
+    }
+    &__name {
+      padding: 1rem 0;
+    }
+    &__myListText {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+    }
+    &__search{
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+    }
+    &__title {
+      font-size: 1.5rem;
+      padding-bottom: 1.5rem;
+      
+    }
+  }
+  .profile__accountImage {
+    height: 5rem;
+    width: 5rem;
+  }
 }

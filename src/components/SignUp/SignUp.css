@@ -113,4 +113,41 @@
 .signUp__form {
   margin: 5rem auto;
 }
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .signUp__button, .signUp__googleButton {
+    margin-bottom: 0.75rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+  .signUp__logo {
+    height: 4rem;
+    width: 12rem;
+    position: absolute;
+    bottom: 92%;
+    z-index: 2;
+    padding: 1rem 2rem;
+  }
+  .signUp__Innerform {
+    width: 27rem;
+    margin-top: -2rem;
+  }
+  .signUp__input {
+    height: 3.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.75rem;
+  }
+  .signUp__more {
+    font-size: 1.1rem;
+  }
+  .signUp__toSignUp, .signUp__link {
+    font-size: 1.2rem;
+    margin: 1.5rem 0.5rem;
+  }
+  .signUp__title {
+    font-size: 2.6rem;
+    margin-top: -20rem;
+  }
+}
 /*# sourceMappingURL=SignUp.css.map */

@@ -106,8 +106,27 @@
   }
   &__buttons {
     @include groupButtons ();
+    display: flex
   }
   &__button-small {
     @include buttonSmall ();
+  }
+}
+@media (min-width: 280px) and(max-width:480px) {
+  .feature__secondary {
+    width: 100%;
+    &-body {
+      top: 10%;
+    }
+  }
+  .feature{
+    &__description {
+      width: 25rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      word-break: break-word;
+    }
   }
 }

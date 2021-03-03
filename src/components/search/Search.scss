@@ -1,6 +1,5 @@
 @import "../../utils";
 .search {
-  
   width: 100%;
   height: 100%;
   margin: 2rem auto 0;
@@ -42,5 +41,24 @@
     padding: 0 2rem;
     appearance:unset;
     border-radius: 0.5rem;
+  }
+}
+@media (min-width: 280px) and(max-width:480px) {
+  .search {
+    &__button {
+      font-size: 1.3rem;
+    }
+    &__input {
+      font-size: 1.3rem;
+    }
+    & select {
+      width: 30rem;
+      font-size: 1.3rem;
+    }
+    &__wrap{
+      width: 30rem;
+      margin: 0 auto 2rem;
+
+    }
   }
 }

@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=Home.css.map */
+.homeScreen {
+  width: 100% !important;
+}
+
+.homeScreen__body {
+  width: 100% !important;
+}
+/*# sourceMappingURL=Home.css.map */

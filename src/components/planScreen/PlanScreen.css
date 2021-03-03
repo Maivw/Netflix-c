@@ -1,7 +1,3 @@
-.planScreen {
-  padding: 2rem 0;
-}
-
 .planScreen__info {
   flex: 0.3;
   padding-left: 1rem;
@@ -75,5 +71,17 @@
 .button__plan-disabled:hover {
   background-color: lightgray !important;
   outline: none !important;
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .button__plan {
+    font-size: 1.2rem;
+  }
+  .button__plan-disabled {
+    font-size: 1.2rem;
+  }
+  __name {
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=PlanScreen.css.map */

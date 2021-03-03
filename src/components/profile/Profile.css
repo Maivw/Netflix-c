@@ -4,13 +4,15 @@
 
 .profile {
   width: 60%;
-  margin: 3rem auto;
-  height: fit-content;
+  margin: 0 auto;
+  height: 100%;
   padding: 5rem 0;
   background-color: black;
   box-shadow: 0 0 10px 0 #acabab;
   border-radius: 0.5rem;
   opacity: 0.8 !important;
+  font-size: 1.5rem;
+  z-index: 3;
 }
 
 .profile__button {
@@ -24,8 +26,8 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  padding: 1.5rem;
-  margin-top: 5rem;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
 }
 
 .profile__button:hover {
@@ -50,19 +52,24 @@
 }
 
 .profile__name {
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  margin: 0rem 0;
-  background-color: gray;
-  color: white;
-  text-align: center;
-  border-radius: 0.5rem;
+  padding: 2rem;
 }
 
 .profile__plans {
   width: 100%;
   border-bottom: 0.1px solid gray;
+}
+
+.profile__myListText {
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  font-weight: 700;
+}
+
+.profile__search {
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  font-weight: 700;
 }
 
 .profile__title {
@@ -76,5 +83,56 @@
 .profile__accountImage {
   height: 10rem;
   width: 10rem;
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .profile {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.3rem;
+  }
+  .profile__button {
+    display: block;
+    background-color: #e50914;
+    width: 100%;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.2rem 0;
+  }
+  .profile__button:hover {
+    background: #f40612;
+  }
+  .profile__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile__content-left {
+    padding: 1rem 0;
+  }
+  .profile__name {
+    padding: 1rem 0;
+  }
+  .profile__myListText {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  .profile__search {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  .profile__title {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .profile__accountImage {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 /*# sourceMappingURL=Profile.css.map */

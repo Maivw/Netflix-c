@@ -94,4 +94,21 @@
   appearance: unset;
   border-radius: 0.5rem;
 }
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .search__button {
+    font-size: 1.3rem;
+  }
+  .search__input {
+    font-size: 1.3rem;
+  }
+  .search select {
+    width: 30rem;
+    font-size: 1.3rem;
+  }
+  .search__wrap {
+    width: 30rem;
+    margin: 0 auto 2rem;
+  }
+}
 /*# sourceMappingURL=Search.css.map */

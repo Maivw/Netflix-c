@@ -106,6 +106,7 @@
 
 .feature__buttons {
   margin-left: 2rem;
+  display: flex;
 }
 
 .feature__button-small {
@@ -125,5 +126,22 @@
   background-color: #fff;
   color: black;
   transition: all 0.25s linear;
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .feature__secondary {
+    width: 100%;
+  }
+  .feature__secondary-body {
+    top: 10%;
+  }
+  .feature__description {
+    width: 25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-break: break-word;
+  }
 }
 /*# sourceMappingURL=Feature.css.map */

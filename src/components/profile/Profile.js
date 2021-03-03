@@ -33,21 +33,21 @@ function Profile() {
 							alt="account"
 							className="profile__accountImage"
 						/>
+						<div className="profile__name">{user?.email}</div>
 					</div>
 					<div className="profile__content-right">
-						<div className="profile__name">{user?.email}</div>
 						<div className="profile__plans">
 							<PlanScreen />
 						</div>
 						<div
-							className="header__myListText"
+							className="profile__myListText"
 							onClick={() =>
 								isPaid ? history.push("/my-list") : history.push("/profile")
 							}
 						>
 							My Watch List
 						</div>
-						<div className="header__searchText" onClick={changSearchPage}>
+						<div className="profile__search" onClick={changSearchPage}>
 							Search
 						</div>
 						<div className="profile__button" onClick={logOut}>

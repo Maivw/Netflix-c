@@ -1,9 +1,7 @@
-// .home {
-//   position: relative;
-//   &__top {
-//     height: 20%;
-//   }
-//   &__body {
-//     margin-top: 15rem;
-//   }
-// }
+@import "../../utils";
+.homeScreen{
+  width: 100% !important;
+  &__body {
+    width: 100% !important;
+  }
+}
