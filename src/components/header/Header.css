@@ -2,6 +2,7 @@
   height: 6rem;
   width: 15rem;
   margin-top: 1rem;
+  margin-left: 4rem;
 }
 
 .header {
@@ -71,5 +72,30 @@
   height: 5rem;
   width: 5rem;
   padding: 2rem 3rem 0rem 3rem;
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .header__logo {
+    height: 4rem;
+    width: 12rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  .header {
+    height: 6rem;
+  }
+  .header__accountImage {
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+  .header__button {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    width: 7rem;
+    padding: .75rem 1.2rem;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

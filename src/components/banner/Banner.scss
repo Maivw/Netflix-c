@@ -6,6 +6,15 @@
 	padding: 30rem 0;
   margin-top: -10rem;
   z-index: 2;
+  &__button { 
+    @include btnTryItNow();
+  }
+  &__content {
+    font-size: 1.8rem;
+  }
+  &__input {
+    @include bigInput();
+   }
   &__subTitle {
     color: white;
     font-size: 2.6rem;
@@ -16,11 +25,6 @@
     @include bigTitle();
     margin: 0 auto;
     max-width: 64rem;
-    &-small {
-      font-size: 2.6rem;
-      padding: 1rem;
-      margin-left: 2rem;
-    }
   }
 
   &__wrap {
@@ -30,14 +34,37 @@
       @include positionAbsolute(absolute, 50%, 70%,translate(-100%, -50%));
     }
   }
- 
-  &__button { 
-    @include btnTryItNow();
+}
+@media (min-width: 280px) and(max-width:480px) {
+  .banner{
+    padding: 10rem 0;
+    margin-top: -5rem;
+    &__button { 
+      font-size: 1.3rem;
+      max-width: 12rem;
+    }
+    &__input {
+      font-size: 1.3rem;
+      max-width: 20rem;
+    }
+    &__subTitle {
+      font-size: 1.5rem;
+      margin: 1rem auto;
+    }
+    &__content {
+      font-size: 1.2rem;
+    }
+    &__title {
+      font-size: 2.6rem;
+      width: 70%;
+    }
+    &__wrap {
+      height: 3.5rem;
+      & img {
+        height: 1rem;
+        width: 1rem;
+        @include positionAbsolute(absolute, 50%, 90%,translate(-50%, -50%));
+      }
+    }
   }
-  &__content {
-    font-size: 1.8rem;
-  }
-  &__input {
-    @include bigInput();
-   }
 }

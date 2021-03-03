@@ -8,49 +8,6 @@
   z-index: 2;
 }
 
-.banner__subTitle {
-  color: white;
-  font-size: 2.6rem;
-  font-weight: normal;
-  margin: 1.6rem auto;
-}
-
-.banner__title {
-  color: white;
-  font-size: 5rem;
-  font-weight: 500;
-  margin: 0 auto;
-  max-width: 64rem;
-}
-
-.banner__title-small {
-  font-size: 2.6rem;
-  padding: 1rem;
-  margin-left: 2rem;
-}
-
-.banner__wrap {
-  height: 5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 2rem;
-  outline: none;
-  position: relative;
-}
-
-.banner__wrap img {
-  filter: brightness(0) invert(1);
-  height: 2rem;
-  width: 2rem;
-  position: absolute;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-100%, -50%);
-}
-
 .banner__button {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -78,11 +35,85 @@
   width: 100%;
   border: 0;
   padding: 0 2rem;
-  height: 5rem;
+  height: 100%;
   box-sizing: border-box;
   outline: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+}
+
+.banner__subTitle {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: normal;
+  margin: 1.6rem auto;
+}
+
+.banner__title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+
+.banner__wrap {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+  outline: none;
+  position: relative;
+}
+
+.banner__wrap img {
+  filter: brightness(0) invert(1);
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-100%, -50%);
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .banner {
+    padding: 10rem 0;
+    margin-top: -5rem;
+  }
+  .banner__button {
+    font-size: 1.3rem;
+    max-width: 12rem;
+  }
+  .banner__input {
+    font-size: 1.3rem;
+    max-width: 20rem;
+  }
+  .banner__subTitle {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+  .banner__content {
+    font-size: 1.2rem;
+  }
+  .banner__title {
+    font-size: 2.6rem;
+    width: 70%;
+  }
+  .banner__wrap {
+    height: 3.5rem;
+  }
+  .banner__wrap img {
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
 }
 /*# sourceMappingURL=Banner.css.map */

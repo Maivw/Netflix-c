@@ -32,4 +32,27 @@
 .footer p {
   padding: 1rem 1rem 1rem 5rem;
 }
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .footer {
+    margin: 3rem auto 0;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .footer__row {
+    font-size: 1.2rem;
+  }
+  .footer__row div {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  .footer__title {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  .footer p {
+    padding: 1rem 1rem 1rem 3em;
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

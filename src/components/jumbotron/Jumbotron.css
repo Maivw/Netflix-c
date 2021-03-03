@@ -37,4 +37,18 @@
 .jumbotron__header {
   max-width: 40rem;
 }
+
+@media (min-width: 280px) and (max-width: 480px) {
+  .jumbotron__item {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .jumbotron__subTitle {
+    font-size: 1.2rem;
+  }
+  .jumbotron__title {
+    font-size: 2.6rem;
+  }
+}
 /*# sourceMappingURL=Jumbotron.css.map */
