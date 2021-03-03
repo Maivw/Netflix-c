@@ -30,7 +30,7 @@
 
 @media (min-width: 280px) and (max-width: 480px) {
   .section__imagePoster {
-    height: 20rem !important;
+    height: 25rem !important;
   }
 }
 /*# sourceMappingURL=Section.css.map */
