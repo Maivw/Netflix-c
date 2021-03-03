@@ -3,8 +3,8 @@ $bg-color-red-hover: #f40612;
 @mixin btnTryItNow {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -28,8 +28,8 @@ $bg-color-red-hover: #f40612;
   font-size: 2rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  border-top-right-radius: 0rem;
-  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0rem !important;
+  border-bottom-right-radius: 0rem !important;
   
 }
 @mixin bigTitle {

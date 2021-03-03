@@ -14,8 +14,8 @@
 .acoordion__button {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -44,8 +44,8 @@
   font-size: 2rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  border-top-right-radius: 0rem;
-  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0rem !important;
+  border-bottom-right-radius: 0rem !important;
 }
 
 .acoordion__footer {
@@ -150,6 +150,7 @@
     height: 3.5rem;
   }
   .acoordion__wrap img {
+    display: none;
     height: 1rem;
     width: 1rem;
     position: absolute;
