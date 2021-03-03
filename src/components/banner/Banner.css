@@ -107,6 +107,7 @@
     width: 70%;
   }
   .banner__wrap {
+    border: 2px solid red;
     height: 3.5rem;
   }
   .banner__wrap img {
@@ -114,7 +115,7 @@
     width: 1rem;
     position: absolute;
     top: 50%;
-    left: 90%;
+    left: 97%;
     transform: translate(-50%, -50%);
   }
 }

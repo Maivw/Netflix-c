@@ -59,11 +59,12 @@
       width: 70%;
     }
     &__wrap {
+      border: 2px solid red;
       height: 3.5rem;
       & img {
         height: 1rem;
         width: 1rem;
-        @include positionAbsolute(absolute, 50%, 90%,translate(-50%, -50%));
+        @include positionAbsolute(absolute, 50%, 97%,translate(-50%, -50%));
       }
     }
   }
