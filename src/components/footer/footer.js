@@ -11,7 +11,7 @@ function Footer() {
 					<div>Investor Relations</div>
 					<div>Ways to Watch</div>
 					<div>Corporate Information</div>
-					<div>Netflix Originals</div>
+					<div>Nflix Originals</div>
 				</div>
 
 				<div className="footer__row">
@@ -35,7 +35,7 @@ function Footer() {
 					<div>Legal Notices</div>
 				</div>
 			</div>
-			<p>Netflix United State</p>
+			<p>Nflix United State</p>
 		</div>
 	);
 }

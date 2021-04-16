@@ -39,7 +39,7 @@ function Feature() {
 					{movie?.title ||
 						movie?.name ||
 						movie?.original_name ||
-						"Welcome to Netflix"}
+						"Welcome to Nflix"}
 				</h1>
 				{movie && (
 					<div className="feature__buttons">

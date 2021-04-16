@@ -14,16 +14,16 @@ function Header() {
 					<Link to="/main">
 						<img
 							className="header__logo"
-							alt="Netflix"
-							src="../images/logo/Netflix-Logo.png"
+							alt="Nflix"
+							src="https://res.cloudinary.com/maivw/image/upload/v1618590328/color_logo_with_background_oeek1j.svg"
 						/>
 					</Link>
 				) : (
 					<Link to="/">
 						<img
 							className="header__logo"
-							alt="Netflix"
-							src="../images/logo/Netflix-Logo.png"
+							alt="Nflix"
+							src="https://res.cloudinary.com/maivw/image/upload/v1618590328/color_logo_with_background_oeek1j.svg"
 						/>
 					</Link>
 				)}

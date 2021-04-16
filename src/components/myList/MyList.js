@@ -19,7 +19,7 @@ function MyList() {
 					{!movies.length && (
 						<div className="my_List-title">
 							Your Favorite list is empty.
-							<br /> Search and addd movies or films to your list.
+							<br /> Search and add movies or films to your list.
 						</div>
 					)}
 					{movies?.map((movie) => (

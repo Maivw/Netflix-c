@@ -14,7 +14,7 @@ function HomeScreen() {
 			</div>
 			<div className="homeScreen__body">
 				<Section
-					title="NETFLIX ORIGINALS"
+					title="NFLIX ORIGINALS"
 					fetchUrl={requests.fetchNetflixOriginals}
 					isLargeSection={true}
 					key={1}

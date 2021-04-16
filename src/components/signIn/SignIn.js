@@ -49,8 +49,8 @@ function SignIn() {
 				<Link to="/">
 					<img
 						className="signIn__logo"
-						alt="Netflix"
-						src="../images/logo/Netflix-Logo.png"
+						alt="Nflix"
+						src="https://res.cloudinary.com/maivw/image/upload/v1618590328/color_logo_with_background_oeek1j.svg"
 					/>
 				</Link>
 			</div>
@@ -89,7 +89,7 @@ function SignIn() {
 				</div>
 
 				<div className="signIn__toSignUp">
-					New to Netflix?{" "}
+					New to Nflix?
 					<Link to="/signup" className="signIn__link">
 						Sign up now.
 					</Link>

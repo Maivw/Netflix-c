@@ -11,6 +11,7 @@ const requests = {
 	searchBygenre: `/discover/movie?api_key=${API_KEY}&sort_by=popularity.desc&include_adult=false&include_video=false&page=2`,
 	search: `/search/multi?api_key=${API_KEY}&language=en-US&page=1&include_adult=false`,
 	markFavorite: `api_key=${API_KEY}`,
+	searchSingleMovie: `api_key=${API_KEY}&language=en-US`,
 };
 
 export default requests;
